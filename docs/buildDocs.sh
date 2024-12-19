@@ -43,7 +43,7 @@ export REPO_NAME="${GITHUB_REPOSITORY##*/}"
 make -C docs clean
   
 # get a list of branches, excluding 'HEAD' and 'gh-pages'
-versions="`git for-each-ref '--format=%(refname:lstrip=-1)' refs/remotes/origin/ | grep -viE '^(HEAD|gh-pages)$'`"
+versions="`git for-each-ref '--format=%(refname:lstrip=-1)' refs/remotes/origin/ | grep -viE '^(HEAD|gh-pages|dev)$'`"
 for current_version in ${versions}; do
   
    # make the current language available to conf.py
