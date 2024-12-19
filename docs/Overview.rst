@@ -2,7 +2,7 @@
 Overview
 ===========
 
-.. figure:: images/system.png
+.. figure:: images/overview.png
     :align: center
     :figwidth: 1000px
 
